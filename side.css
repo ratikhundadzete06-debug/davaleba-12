@@ -1,0 +1,89 @@
+.image-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+  gap: 16px;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Top row - two images side by side */
+.image-container .top-left {
+  grid-column: 1;
+  grid-row: 1;
+  width: 100%;
+  height: 350px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.image-container .top-right {
+  grid-column: 2;
+  grid-row: 1;
+  width: 100%;
+  height: 350px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* Bottom row - left large, right has 3 small stacked */
+.image-container .bottom-left {
+  grid-column: 1;
+  grid-row: 2;
+  width: 100%;
+  height: 350px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.image-container .bottom-right-container {
+  grid-column: 2;
+  grid-row: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  height: 350px;
+}
+
+.image-container .small-image {
+  flex: 1;
+  width: 100%;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* All images use object-fit cover */
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .image-container {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+  
+  .image-container .top-left,
+  .image-container .top-right,
+  .image-container .bottom-left {
+    grid-column: 1;
+  }
+  
+  .image-container .bottom-right-container {
+    grid-column: 1;
+  }
+}
+
+/* Heading styling */
+.happening-now {
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 16px;
+  color: #33

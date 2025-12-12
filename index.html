@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Photo Layout</title>
     <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="stile.css">
     <link rel="stylesheet" href="css/stile.scss">
+    <link rel="stylesheet" href="side.css">
 </head>
 <body>
 <header>
@@ -36,21 +38,21 @@
 
         <section class="trending">
             <div class="card">
-                <img src="css/images/Group 1.svg" class="img-box">
+                <img src="images/Group 1.svg" class="img-box">
                 <h3>Dolore magna aliqua</h3>
                 <p>You can use this beautiful beach in Los Angeles...</p>
                 <span>2h ago</span>
             </div>
 
             <div class="card">
-                <img src="css/images/Rectangle 3.svg" class="img-box">
+                <img src="images/Rectangle 3.svg" class="img-box">
                 <h3>Dolore magna aliqua</h3>
                 <p>You can use this beautiful beach in Hawaii...</p>
                 <span>2h ago</span>
             </div>
 
             <div class="card">
-                <img src="css/images/Rectangle 4.svg" class="img-box">
+                <img src="images/Rectangle 4.svg" class="img-box">
                 <h3>Dolore magna aliqua</h3>
                 <p>You can use this beautiful beach in Iceland...</p>
                 <span>2h ago</span>
@@ -63,20 +65,29 @@
         </section>
 
         <section class="happening">
-            <img src="css/images/Rectangle 7.svg" class="big-img">
-
-            <div class="side-imgs">
-                <img src="css/images/Rectangle 8.svg" class="img-box small">
-                <img src="css/images/Rectangle 9.svg" class="img-box small">
-            </div>
-
-            <div class="bottom-row">
-                <img src="css/images/Rectangle 10.svg" class="img-box">
-                <div class="side-small">
-                    <img src="css/images/Rectangle 11.svg" class="img-box small">
-                    <img src="css/images/geolab-თეთრი-ლოგო-Png 1.svg" class="img-box small">
-                </div>
-            </div>
+<div class="image-container">
+  <!-- Main large image at top -->
+  <div class="top-left">
+    <img src="images/Rectangle 7.svg" alt="Golden Gate Bridge">
+  </div>
+  
+  <!-- Two medium images in second row -->
+  <div class="top-right">
+    <img src="images/Rectangle 8.svg" alt="Mountain Landscape">
+  </div>
+  <div class="bottom-left">
+    <img src="images/Rectangle 9.svg" alt="Forest">
+  </div>
+  
+  <div class="bottom-right-container">
+  <div class="small-image">
+    <img src="images/Rectangle 10.svg" alt="Elephants">
+  </div>
+  <div class="small-image">
+    <img src="images/Rectangle 11.svg" alt="City Tower">
+  </div>
+</div>
+</div>
         </section>
 
     </main>
