@@ -1,0 +1,156 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #f3f3f3;
+  color: #333;
+}
+
+/* NAVBAR */
+header {
+  background: white;
+  padding: 15px 40px;
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    a {
+      margin-right: 25px;
+      text-decoration: none;
+      color: #333;
+      font-weight: 600;
+    }
+
+    .profile-icons {
+      display: flex;
+      gap: 10px;
+
+      .circle {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+      }
+
+      .red { background: #ff5a5a; }
+      .purple { background: #b35aff; }
+      .green { background: #42cc59; }
+      .blue { background: #4dadeb; }
+    }
+  }
+}
+
+/* SECTION TITLES */
+.section-title {
+  margin: 40px auto 20px;
+  width: 90%;
+
+  h2 {
+    font-size: 22px;
+    font-weight: 700;
+  }
+}
+
+/* TRENDING */
+.trending {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin: 20px auto 40px;
+  gap: 25px;
+
+  .card {
+    background: white;
+    border-radius: 12px;
+    width: 33%;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+      border-radius: 12px 12px 0 0;
+    }
+
+    h3 {
+      margin: 15px;
+      font-size: 18px;
+    }
+
+    p {
+      margin: 0 15px 10px;
+      font-size: 14px;
+      color: #666;
+    }
+
+    span {
+      margin-left: 15px;
+      font-size: 12px;
+      color: #aaa;
+    }
+  }
+}
+
+/* HAPPENING NOW */
+.happening-grid {
+  width: 90%;
+  margin: 20px auto 60px;
+  display: flex;
+  gap: 25px;
+
+  .left-column,
+  .right-column {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  .big-img {
+    width: 758px;
+    height: 430px;
+    object-fit: cover;
+    border-radius: 5px;
+  }
+
+  .small-img {
+    width: 362px;
+    height: 212px;
+    object-fit: cover;
+    border-radius: 5px;
+  }
+}
+
+/* FOOTER */
+footer {
+  background: #1e2a3a;
+  color: white;
+  padding: 50px 40px;
+
+  .footer-links {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+  }
+
+  h4 {
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
+
+  p {
+    margin-bottom: 6px;
+    font-size: 14px;
+  }
+
+  .footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 15px;
+  }
+}
